@@ -4,27 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vous vous êtes fait phishé !</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-        h1 {
-            color: #d9534f;
-        }
-    </style>
-    
-    <!-- Google Analytics -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWKCLJ42DB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -33,11 +13,19 @@
       gtag('config', 'G-SWKCLJ42DB');
     </script>
 </head>
-<body>
+<body class="bg-light text-center d-flex align-items-center justify-content-center vh-100">
     <div class="container">
-        <h1>⚠️ Vous vous êtes fait phishé ! ⚠️</h1>
-        <p>Ceci est une démonstration de sensibilisation à la cybersécurité.</p>
-        <p>Faites toujours attention aux liens que vous cliquez !</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 p-4 shadow rounded bg-white">
+                <h1 class="text-danger fw-bold">Vous vous êtes fait phishé !</h1>
+                <p class="mt-3">Ceci est une démonstration de sensibilisation à la cybersécurité !</p>
+                <p class="fw-bold">Faites toujours attention aux liens sur lesquels vous cliquez.<br> 
+                Ne scannez jamais de QR code sans être certain de sa source et de sa légitimité !</p>
+                <p class="text-muted">Pour une opération réussie et des indicateurs réalistes : <br><strong>Chuttt !</strong> Ne dites rien à vos homologues et laissez-les scanner si c'est leur intention !</p>
+                <p class="small text-secondary">Durant cette démonstration, aucune donnée personnelle n'est traitée. Seules des données strictement anonymes de statistiques pourront être produites.</p>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
